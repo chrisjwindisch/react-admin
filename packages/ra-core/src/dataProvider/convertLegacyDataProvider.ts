@@ -11,7 +11,7 @@ import {
 } from '../core';
 import { LegacyDataProvider, DataProvider } from '../types';
 
-const defaultDataProvider = () => Promise.resolve();
+const defaultDataProvider = {};
 defaultDataProvider.create = () => Promise.resolve(null);
 defaultDataProvider.delete = () => Promise.resolve(null);
 defaultDataProvider.deleteMany = () => Promise.resolve(null);
